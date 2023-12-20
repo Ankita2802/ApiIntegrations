@@ -15,10 +15,10 @@ class GetJokeModel {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['type'] = this.type;
-    data['setup'] = this.setup;
-    data['punchline'] = this.punchline;
-    data['id'] = this.id;
+    data['type'] = type;
+    data['setup'] = setup;
+    data['punchline'] = punchline;
+    data['id'] = id;
     return data;
   }
 }

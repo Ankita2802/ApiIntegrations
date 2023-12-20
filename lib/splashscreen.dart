@@ -1,4 +1,3 @@
-
 import 'package:apiintergration/userapi/userscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -16,15 +15,17 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
- @override
+  @override
   void initState() {
     // TODO: implement initState
-   Future.delayed(Duration(seconds: 3),(){
-     Navigator.push(context,MaterialPageRoute(builder: (context) => Post_Data(),
-     ));
-   });
+    Future.delayed(Duration(seconds: 3), () {
+      //  Navigator.push(context,MaterialPageRoute(builder: (context) => Post_Data(),
+      //  ));
+      Navigator.pushNamed(context, '/user');
+    });
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,15 +33,11 @@ class _SplashScreenState extends State<SplashScreen> {
         height: double.infinity,
         width: double.infinity,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors:[
-                Colors.black,
-                Colors.black26
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomLeft,
-          )
-        ),
+            gradient: LinearGradient(
+          colors: [Colors.black, Colors.black26],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomLeft,
+        )),
       ),
     );
   }

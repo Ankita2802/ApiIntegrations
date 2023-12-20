@@ -1,8 +1,8 @@
+import 'package:apiintergration/POST_API/RegisterSuccess/TabbarView.dart';
+import 'package:apiintergration/Posts/Homescreen.dart';
 import 'package:apiintergration/splashscreen.dart';
-import 'package:apiintergration/userapi/userscreen.dart';
-import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-       '/': (context) => const SplashScreen(),
-        '/user': (context) => const PersonalDetails(),
+        '/': (context) => const SplashScreen(),
+        '/user': (context) => const Tabbarview(),
         // '/dogsimages': (context) =>  DogImages(),
       },
     );
